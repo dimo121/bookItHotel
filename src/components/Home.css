@@ -1,0 +1,56 @@
+.grid-container{
+
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    ".a.b."
+    ".c.d."
+    ".e.f."
+    ".g.h."
+    ;
+    grid-gap: 2em;
+}
+
+.grid-container p {
+    min-width: 35em;
+}
+
+.grid-container:nth-child(1){
+    margin-top: 5em;
+}
+
+.grid-container img {
+    height: 25em;
+    width: 25em;
+    opacity: 0.5; 
+}
+
+@media (max-width:500px){
+
+    .grid-container {
+        display: grid;
+        
+        grid-template-areas: 
+        "a"
+        "b"
+        "d"
+        "c"
+        "e"
+        "f"
+        "h"
+        "g";
+
+    }
+
+    .grid-container p {
+        width: 15em;
+    }
+}
+/* .grid-container p {
+    width: 35em;
+} */
+
+/* .page-container h2 {
+    text-align: center;
+} */

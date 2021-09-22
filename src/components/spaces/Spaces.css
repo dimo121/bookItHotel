@@ -1,0 +1,32 @@
+.spaces-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .space-component{
+    margin: 2em;
+    border: 1px solid;
+    border-radius: .5em;
+    padding: .5em;
+    text-align: left;
+  }
+
+  .space-component button{
+    display: block;
+    width: 14em;
+    margin: 1em auto -1em auto;
+    background-color: #008AF8;
+    color: white;
+    border-radius: 5px;
+    border-color: white;
+  }
+
+  .space-component label{
+    font-size: .8em;
+    margin-left: .5em;
+  }
+
+  .space-component label:first-of-type {
+    font-size: 1em;
+    font-weight: bold;
+  }
